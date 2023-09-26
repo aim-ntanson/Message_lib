@@ -2,11 +2,11 @@
 ## Message Info
 ```plantuml
 class Message {
-  messageId: int
-  sender: string
-  recipient: string
+  messageId: uint8_t
+  sender: std::string
+  recipient: std::string
   time_t    timestamp
-  vector<messageInfo> MessageInfo
+  vector<messageInfo> messageInfo
   
   Message()
   void setSender(const string& name)
