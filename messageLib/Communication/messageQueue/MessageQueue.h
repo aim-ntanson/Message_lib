@@ -1,9 +1,8 @@
+#ifndef MESSAGEQUEUE_H
+#define MESSAGEQUEUE_H
 
-#ifndef _MESSAGEQUEUE_H
-#define _MESSAGEQUEUE_H
-
-#include "CommunicationMethod.h"
-#include <stdio.h>
+#include "../CommunicationMethod.h"
+#include <cstdio>
 #include <sys/ipc.h>
 #include <sys/msg.h>
 
@@ -11,10 +10,12 @@ class MessageQueue : public CommunicationMethod {
 public:
     void sendMessage(Message& message) override;
     Message& receiveMessage() override;
+    key_t generateMsgKey();
 
 private:
     key_t msgKey;
+
 };
 
 
-#endif //_MESSAGEQUEUE_H
+#endif //MESSAGEQUEUE_H

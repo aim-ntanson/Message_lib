@@ -1,6 +1,6 @@
 
-#ifndef _COMMUNICATIONMETHOD_H
-#define _COMMUNICATIONMETHOD_H
+#ifndef COMMUNICATIONMETHOD_H
+#define COMMUNICATIONMETHOD_H
 
 #include "Message.h"
 
@@ -19,4 +19,4 @@ private:
 };
 
 
-#endif //_COMMUNICATIONMETHOD_H
+#endif //COMMUNICATIONMETHOD_H
